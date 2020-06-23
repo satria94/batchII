@@ -197,9 +197,8 @@ header .header-right a:hover {
 
 #top {
  padding: 180px 0 100px 0;
-  background-image: url("https://images.app.goo.gl/1TtMXBn3fBj1WFT4A");
-  background-size: cover;
-  color: white;
+ background: linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
+  color: #fff;
   line-height: 100vh;
   font-size: 1.25em;
   text-align: center;
