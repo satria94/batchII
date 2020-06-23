@@ -197,8 +197,9 @@ header .header-right a:hover {
 
 #top {
  padding-top: 180px 0 100px 0;
-background-image:url(resources/1.png)
-	background-size:cover;
+ background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+	color:#fff;
   line-height: 100vh;
   font-size: 1.25em;
   text-align: center;
