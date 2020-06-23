@@ -23,6 +23,7 @@
   90% { transform: translate(7px, 6px) rotate(-2.5deg); }
   0%, 100% { transform: translate(0, 0) rotate(0deg); }
 }
+/*general*/
 
 * {
 	box-sizing: border-box;
@@ -39,7 +40,10 @@ body{
 	margin:0;
 	font-family: "Lucida Grande", sans-serif;
 	font-size: 14px;
-
+  background: #e8f5e9;
+  color: #424242;
+  line-height: 1.618em;
+  padding: 0;
 }
 
 a{
@@ -53,47 +57,88 @@ img{
 	width: 100%;
 }
 
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
+#to-top {
   position: fixed;
+  bottom: 30px;
+  right: -70px;
+  width: 2em;
+  line-height: 2em;
+  font-size: 2em;
+  text-align: center;
+  background: #2f80ed;
+  color: #fff;
+  opacity: .75;
+  border-radius: 50%;
+  transition: .25s all;
 }
 
-header .header-left{
-	float: left;
-	
+#to-top:hover {
+  opacity: 1;
 }
 
-header .logo{
-	margin: 0;
+.container{
+   max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.container h2 {
+  margin: 0 auto;
+  padding: 0 30px 50px;
+  font-size: 2.5em;
+  line-height: 1.618em;
+}
+
+
+.non-mobile-only{
+display: none !important;
+}
+
+.base{
+  display: inline-block;
+  padding: 15px;
+}
+
+
+
+/* kepala */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  line-height: 0;
+  color: #fff;
+  background: rgba(34,49,52,.9);
+}
+
+header .container {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0 30px;
+  line-height: 70px;
+}
+
+header .logo {
+  margin: 0;
   padding: 0;
   font-size: 20px;
   font-weight: bold;
 }
 
-header .header-left a{
-	color: #fff;
+header .header-left {
+  float: left;
 }
 
-header .header-right{
-float: right;
-margin-right: -25px;
-line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  transition: all 0.5s;
+header .header-left a {
+  color: #fff;
 }
 
-header .container{
-	width:100%;
-margin: 0;
-  padding: 0 0 0 30px;
-  line-height: 70px;	
+header .header-right {
+  float: right;
+  text-align: right;
 }
 
 header #menu-toggle {
@@ -147,34 +192,53 @@ header .header-right a:hover {
 }
 
 
-.container{
-   max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-  display: inline-block;
-}
 
-.top-wrapper {
-	padding: 180px 0 100px 0;
+/* untuk atas */
+
+#top {
+  padding: 180px 0 100px 0;
   background-image: url("resources/1.png");
   background-size: cover;
   color: white;
+  line-height: 100vh;
+  font-size: 1.25em;
   text-align: center;
+  height: calc(100vh + 70px);
 }
 
-.top-wrapper h1{
-	opacity: 0.7;
+#top .start{
+
+  float: left;
+  margin: 0 30px;
+  line-height: 1.618em;
+}
+
+#top h1{
+  opacity: 0.7;
   font-size: 45px;
   letter-spacing: 5px;
-  margin-bottom: 10px;
+  margin: 0 0 50px;
+  font-size: 2em;
+}
+
+#top p {
+  margin: 0 0 50px;
+}
+
+#top .button {
+  padding: 15px 30px;
+  background: #2ebf91;
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+}
+
+#top .button:hover {
+  background: #fbc02d;
 }
 
 
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
+/* untuk pelajaran */
 
 #lesson {
   margin-bottom: 50px;
@@ -230,6 +294,8 @@ header .header-right a:hover {
 #lesson .js:hover .fa-fw {
   font-size: 100px;
 }
+
+/* untuk daftar liburan */
 
 #holiday {
   margin-bottom: 50px;
@@ -294,6 +360,8 @@ header .header-right a:hover {
 }
 
 
+/* untuk tim */
+
 #profile {
 	 margin-bottom: 50px;
   text-align: center;
@@ -329,33 +397,9 @@ display: inline-block;
 }
 
 
-.non-mobile-only{
-display: none !important;
-}
 
-.base{
-	display: inline-block;
-	padding: 15px;
-}
 
-#to-top {
-  position: fixed;
-  bottom: 30px;
-  right: -70px;
-  width: 2em;
-  line-height: 2em;
-  font-size: 2em;
-  text-align: center;
-  background: #2f80ed;
-  color: #fff;
-  opacity: .75;
-  border-radius: 50%;
-  transition: .25s all;
-}
-
-#to-top:hover {
-  opacity: 1;
-}
+/* untuk penyelenggara */
 
 #organizer {
   margin-bottom: 100px;
@@ -379,6 +423,9 @@ display: none !important;
 #organizer img:hover {
   filter: grayscale(0%);
 }
+
+
+/* bagian bawah */
 
 footer {
   background: #353a40;
