@@ -21,44 +21,46 @@
 </head>
 <body>
 	<header>
-		<div class="container">
-			<div class="header-left">
-				<p class="logo">
-					<a href="./">I12_DTS20</a>
-				</p>
-			</div>
-
-			<!---menu sebelah kanan-->
-
-		<div class="header-right">
-			<input type="checkbox" class="mobile-only" id="menu-toggle">
-			<i class="fas fa-bars fa-fw hamburger mobile-only"></i>
-			<ul class ="scroll">
-			<a onclick="scrollink('lesson')">
-				<li>Pelajaran</li>
-			</a>
-			<a onclick="scrollink('holiday')">
-				<li>Wisata Indonesia</li>
-			</a>
-			<a onclick="scrollink('profile')">
-				<li>Tentang</li>
-			</a>
-			<a onclick="scrollink('organizer')">
-				<li>Penyelenggara</li>
-			</a>
-		</ul>
-		</div>
-		</div>
-	</header>
-
+    <div class="container">
+      <div class="header-left">
+        <p class="logo">
+          <a href="./">I12_DTS20</a>
+        </p>
+      </div>
+      <div class="header-right">
+        <input type="checkbox" class="mobile-only" id="menu-toggle">
+        <i class="fas fa-bars fa-fw hamburger mobile-only"></i>
+        <ul class="scroll">
+          <a onclick="scrollLink('lesson')">
+            <li>Materi</li>
+          </a>
+          <a onclick="scrollLink('holiday')">
+            <li>Travelling</li>
+          </a>
+          <a onclick="scrollLink('profile')">
+            <li>Tim</li>
+          </a>
+          <a onclick="scrollLink('organizer')">
+            <li>Penyelenggara</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </header>
 
 <!--untuk dibawah header-->
-<div class="top-wrapper">
+<section id="top">
 	<div class="container">
-		<h1>Selamat Datang! inilah hasil proyek tim kami <strong>I12_DTS20</strong>Belajar coding sangat menyenangkan</h1>
+		<div class="start">
+			<h1>I12_DTS20</h1>
+		<p>Selamat Datang! inilah hasil proyek tim kami <strong>I12_DTS20</strong> Belajar coding sangat menyenangkan</p>
 		<p>Indonesia sangat beragam dengan budayanya, flora-faunanya serta kaya akan keindahan alam serta ilmunya</p>
+		<a onclick="scrollLink('lesson')" class="button" title="Lihat selengkapnya dari tim F25_DTS20">Selengkapnya</a>
 	</div>
-</div>
+	</div>
+	
+</section>
+
 
 <!--untuk dibagian pelajaran-->
 
@@ -258,7 +260,7 @@
   </footer>
 
 <!-- untuk balik ke atas-->
- <a onclick="scrollLink('lesson')" title="Kembali ke atas">
+ <a onclick="scrollLink('top')" title="Kembali ke atas">
     <div id="to-top">
       <i class="fas fa-chevron-up fa-fw"></i>
     </div>
