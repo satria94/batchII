@@ -197,7 +197,8 @@ header .header-right a:hover {
 
 #top {
  padding-top: 180px 0 100px 0;
-background: linear-gradient(135deg, #dfe6e9 0%, #74b9ff 100%);
+background-image:url(resources/1.png)
+	background-size:cover;
   line-height: 100vh;
   font-size: 1.25em;
   text-align: center;
