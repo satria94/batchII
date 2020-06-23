@@ -198,6 +198,8 @@ header .header-right a:hover {
 #top {
   padding: 180px 0 100px 0;
   background-image: url("resources/1.png")
+	  background:cover;
+	color:#fff;
   line-height: 100vh;
   font-size: 1.25em;
   text-align: center;
