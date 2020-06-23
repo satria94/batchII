@@ -1,5 +1,6 @@
 /* tablet screen view */
 
+@media (min-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -35,6 +36,7 @@
     font-size: 3.5em;
   }
 
+  
 
   #organizer img {
     display: inline-block;
@@ -51,23 +53,31 @@
   }
 }
 
-
 /* desktop screen view */
 
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
-#top {
+
+  #top {
     min-height: 700px;
     padding-top: 180px;
+    
   }
 
-  #landing .start {
+  #top .start {
     max-width: 450px;
     margin: 0 0 0 30px;
     text-align: left;
   }
+
+  #portfolio .image,
+  #portfolio .caption {
+    float: left;
+    width: 50%;
+  }
+}
 
 /* large desktop screen view */
 
