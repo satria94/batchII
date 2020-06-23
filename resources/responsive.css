@@ -1,12 +1,7 @@
 /* tablet screen view */
 
-@media (min-width: 768px) {
   body {
     font-size: 16px;
-  }
-
-  .top-wrapper h1{
-    font-size: 32px;
   }
 
   .container {
@@ -36,6 +31,10 @@
     width: 360px;
   }
 
+  #top h1 {
+    font-size: 3.5em;
+  }
+
 
   #organizer img {
     display: inline-block;
@@ -52,13 +51,23 @@
   }
 }
 
+
 /* desktop screen view */
 
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
+#top {
+    min-height: 700px;
+    padding-top: 180px;
+  }
 
+  #landing .start {
+    max-width: 450px;
+    margin: 0 0 0 30px;
+    text-align: left;
+  }
 
 /* large desktop screen view */
 
@@ -67,10 +76,7 @@
     width: 1170px;
   }
 
-}
-
-
-/* Smartphone */
-.top-wrapper h1{
-  text-align:left;
+  #top .start {
+    margin: 0 0 0 50px;
+  }
 }
