@@ -196,7 +196,7 @@ header .header-right a:hover {
 /* untuk atas */
 
 #top {
- padding-top: 180px 0 100px 0;
+ padding-top: 20vh;
  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
   background-size: cover;
 	color:#fff;
