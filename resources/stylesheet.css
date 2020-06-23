@@ -196,14 +196,13 @@ header .header-right a:hover {
 /* untuk atas */
 
 #top {
- padding-top: 20vh;
- background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-	color:#fff;
+padding-top: 20vh;
+  height: calc(100vh + 70px);
+  background: linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);
   line-height: 100vh;
   font-size: 1.25em;
   text-align: center;
-  height: calc(100vh + 70px);
+  color: #fff;
 }
 
 #top .start{
